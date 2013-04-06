@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4508
+
+Provides `:compiler pytest` to work with Vim's `:make` command and plugins like MakeGreen: https://github.com/reinh/vim-makegreen
+
+If you don't know this `:make` thingy, see `:help quickfix` to get started.
+
+For any feedback, feel free to open an issue at https://github.com/5long/pytest-vim-compiler/issues
