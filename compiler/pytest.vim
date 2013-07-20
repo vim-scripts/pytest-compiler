@@ -2,7 +2,7 @@
 " Compiler: Py.test <http://pytest.org/>
 " Maintainer: Whyme Lyu <5longluna at gmail.com>
 " URL: https://github.com/5long/pytest-vim-compiler
-" Version: 0.1.0
+" Version: 0.4.0
 
 if exists("current_compiler")
   finish
@@ -19,10 +19,9 @@ set cpo-=C
 CompilerSet makeprg=py.test\ --tb=short\ -q
 
 CompilerSet errorformat=
-  \%A%*[_]%.%#,
-  \%-C%f:%l:\ %.%#,
-  \%-C>%.%#,
-  \%-ZE%*[\ ]%m,
+  \%+G%*[_]\ %m\ %*[_],
+  \%E%>%f:%l:\ %.%#,
+  \%-Z>%*[\ ]%m,
   \%-G%.%#
 
 let &cpo = s:cpo_save
